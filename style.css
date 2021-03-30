@@ -1,0 +1,111 @@
+body{
+    background-image: url(https://www.thegreatcoursesdaily.com/wp-content/uploads/2020/08/Field-Guide-Planets_7-Clues-to-Understand-How-Our-Solar-System-Formed_QBS_Featured.jpg);
+    background-size: cover;
+}
+
+.head{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 55px;
+    text-shadow: 2px 2px 2px black,
+                 0 0 2em lime,
+                 0 0 0.2em lime;
+    font-family: 'Kalam', cursive;
+}
+
+.head:hover{
+    color: white;
+    font-family: 'Kalam', cursive;
+    text-shadow: 2.6px 2.6px 2px black,
+                 0 0 2.5em lime,
+                 0 0 0.25em lime;
+}
+
+div{
+    text-align: center;
+    display: inline-block;
+    padding: 25px;
+    border: 3px solid hotpink;
+    border-radius: 20px;
+    width: 240px;
+    height: 160px;
+}
+
+.d1 {
+    background-image: url(https://cdn.mos.cms.futurecdn.net/VL7nBnqLZMhQt5VkPzzJVF-1200-80.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 200px;
+    left: 130px;
+}
+.d2 {
+    background-color: black;
+    background-image: url(https://media1.giphy.com/media/X7jYaZR9uxmovsYWPR/giphy.gif);
+    background-size: cover;
+    position: absolute;
+    top: 200px;
+    left: 610px;
+}
+.d3 {
+    background-color: black;
+    background-image: url(https://maroonersrock.com/wp-content/uploads/2017/11/Its-Quiz-Time-Logo.png);
+    background-size: cover;
+    position: absolute;
+    top: 200px;
+    left: 1100px;
+}
+.d4 {
+    background-image: url(https://cdn.mos.cms.futurecdn.net/iECYFREjmCQoJVJNx7eUVA.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 500px;
+    left: 130px;
+}
+.d5 {
+    background-image: url(https://38.media.tumblr.com/40ea4e6ed8af48aa86a689fee60d1320/tumblr_ndx2dupSuR1txar8to1_500.gif);
+    background-size: cover;
+    position: absolute;
+    top: 500px;
+    left: 610px;
+}
+.d6 {
+    background-image: url(https://i.pinimg.com/564x/87/3d/c1/873dc1619a30dac479e0fb854df76691.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 500px;
+    left: 1100px;
+}
+a{
+    transition-duration: 2000ms;
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px 1px black,
+                 1.5px 1.5px 2px black,
+                 2px 2px 3px black,
+                 2.5px 2.5px 4px black,
+                 2px 2px 5px rgb(0, 0, 0);
+    font-family: 'Poppins', sans-serif;
+}
+
+
+div:hover a{
+    text-decoration: none;
+    color: hotpink;
+    text-shadow: 1px 1px 1px rgb(18, 0, 121),
+                 1.5px 1.5px 2px rgb(18, 0, 121),
+                 2px 2px 3px rgb(18, 0, 121),
+                 2px 2px 5px rgb(18, 0, 121);
+    font-family: 'Akaya Kanadaka', cursive;
+    letter-spacing: 3px;
+}
+
+h3{
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    border-radius: 50%;
+}
+h3 img{
+    border-radius: 50%;
+}

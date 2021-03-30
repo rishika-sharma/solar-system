@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Train+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+    <title>Play Quiz</title>
+    <style>
+        body{
+            background-image: url(https://i.pinimg.com/originals/8e/46/15/8e46150f790fbefe438d9c2767c32ad1.gif);
+            text-align: center;
+            background-repeat: repeat;
+            background-size: 400px;
+            margin: 100px;
+            color: white;
+        }
+        h6{
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            z-index: 5;
+        }
+        .up,.back{
+            border-radius: 50%;
+            height: 80px;
+        }
+        h5{
+            position: fixed;
+            bottom: 25px;
+            left: 25px;
+            z-index: 5;
+        }
+        label{
+            color: white;
+            font-size: 30px;
+        }
+        input{
+            color: rgb(255, 255, 255);
+            font-size: 35px;
+            padding: 10px;
+            border: 2px solid rgb(255, 255, 255);
+            width: 300px;
+            background-color: rgba(255, 255, 255, 0);
+            border-radius: 25px;
+        }
+        input:hover{
+            box-shadow: 2.6px 2.6px 2px rgb(0, 0, 0),
+                         0 0 2.5em rgb(255, 255, 255),
+                         0 0 0.25em rgb(255, 255, 255);
+            color: rgb(255, 255, 255);
+            font-size: 35px;
+            padding: 10px;
+            border: 4px solid rgb(255, 255, 255);
+            width: 300px;
+            background-color: rgba(255, 255, 255, 0);
+            border-radius: 25px;
+        }
+    </style>
+</head>
+<body>
+    <h5>
+        <a href="index2.html">
+            <img class="back" src="https://www.icebergwebdesign.com/wp-content/uploads/2015/11/back-blue-button-xs.jpg" alt="Back">
+        </a>
+    </h5>
+    <h6><a href="#top">
+        <img class="up" src="https://png.pngtree.com/png-vector/20190806/ourlarge/pngtree-arrow-arrows-up-upload-blue-dotted-line-line-icon-png-image_1651826.jpg" alt="Up">
+    </a></h6>
+<br>
+<h2 id="top" style="text-align: center; background-color: black;"><a class="head" href="index.html">Solar System</a></h2>
+
+<br><br><br><br><br>
+
+
+<form>
+
+
+    <label for="q1">1. Which Planet is the smallest ?</label>
+    <br><br><br>
+    <input type="text" name="q1" id="q1" placeholder="Type Here" pattern="Mercury">
+
+    <br><br><br><br><br>
+
+    <label for="q2">2. Number of moons of mars ?</label>
+    <br><br><br>
+    <input type="number" name="q2" id="q2" placeholder="Type Here" pattern="2">
+
+    <br><br><br><br><br>
+
+    <label for="q3">3. Which planet is the third planet?</label>
+    <br><br><br>
+    <input type="text" name="q3" id="q3" placeholder="Type Here" pattern="Earth">
+    
+    <br><br><br><br><br>
+
+    <label for="q4">4. What is the name of our Galaxy ?</label>
+    <br><br><br>
+    <input type="text" name="q4" id="q4" placeholder="Type Here" pattern="Milky Way">
+
+    <br><br><br><br><br>
+
+    <label for="q5">5. Which Planet is the largest ?</label>
+    <br><br><br>
+    <input type="text" name="q5" id="q5" placeholder="Type Here" pattern="Jupiter">
+
+    <br><br><br><br><br>
+
+    <label for="q6">6. Where is the largest Volcano Olumpus Mons Located ?</label>
+    <br><br><br>
+    <input type="text" name="q6" id="q6" placeholder="Type Here" pattern="mars">
+
+    <br><br><br><br><br>
+
+    <label for="q7">7. Which planet is the brightest ?</label>
+    <br><br><br>
+    <input type="text" name="q7" id="q7" placeholder="Type Here" pattern="venus">
+
+
+    <br><br><br><br><br>
+
+    <label for="q8">8. How many planets are there in our solar system ?</label>
+    <br><br><br>
+    <input type="number" name="q8" id="q8" placeholder="Type Here" pattern="8">
+
+    <br><br><br><br><br>
+
+    <label for="q9">9. How long does it take for light from the Sun to reach Earth ?</label>
+    <br><br><br>
+    <input type="number" name="q9" id="q9" placeholder="Type Here (in mins)" pattern="8">
+
+    <br><br><br><br><br>
+
+    <label for="q10">10. Which planet have the highest density ?</label>
+    <br><br><br>
+    <input type="text" name="q10" id="q10" placeholder="Type Here" pattern="Earth">
+
+
+
+</form>
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<fieldset>
+    <legend>Answers</legend>
+    1→  Mercury
+    <br>
+    2→  2
+    <br>
+    3→  Earth
+    <br>
+    4→  Milky Way
+    <br>
+    5→ Jupiter
+    <br>
+    6→ Mars
+    <br>
+    7→ Venus
+    <br>
+    8→ 8
+    <br>
+    9→ 8
+    <br>
+    10→ Earth
+</fieldset>
+
+</body>
+</html>
