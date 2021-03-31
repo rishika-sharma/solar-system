@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solar-System</title>
+    <title>Solar System</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -105,16 +105,81 @@
             transition-timing-function: ease;
             letter-spacing: 1.5px;
         }
+        a.phone{
+            display: none;
+        }
+        @media only screen and (max-width: 500px) {
+            body{
+            margin: 30px;
+            background-image: url(https://www.wallpapertip.com/wmimgs/100-1002225_wallpaper-planet-galaxy-universe-stars-galaxy-background-for.jpg);
+            background-size: 800px;
+            background-repeat: no-repeat;
+            background-color: black;
+            text-align: center;
+            }
+            h1{
+                font-size: 100px;
+                color: white;
+                text-shadow: 1px 1px 2px black,
+                             0 0 1em lime,
+                             0 0 0.2em lime;
+                font-family: 'Kalam', cursive;
+                text-align: center;
+                margin: 0;
+                position: absolute;
+                left: 250px;
+            }
+            h2{
+                font-size: 50px;
+                color: rgb(116, 27, 68);
+                text-shadow: 1px 1px 2px rgb(255, 196, 0),
+                             2px 2px 1.5px rgb(255, 217, 0),
+                             0 0 1em rgb(255, 238, 2),
+                             0 0 1.5em rgb(0, 0, 0),
+                             0 0 0.2em rgb(0, 0, 0),
+                             0 0 0.2em rgb(0, 0, 0);
+                font-family: 'Della Respira', serif;
+                margin-top: 500px;
+                margin-left: 300px;
+                margin-right: 0px;
+                margin-bottom:0px;
+            }
+            a.lappy{
+                visibility: hidden;
+            }
+            div{
+                visibility: hidden;
+            }
+            a.phone{
+                display: block;
+                margin: 0px 300px;
+                text-align: center;
+                font-size: 70px;
+            }
+            h3{
+                font-family: 'Gloria Hallelujah', cursive;
+                color: rgb(255, 0, 200);
+                font-size: 40px;
+                text-align: center;
+                letter-spacing: 3.6px;
+                margin-left: 260px;
+                margin-right: 0px;
+            }
+        }
     </style>
 </head>
 <body>
     <h1>Solar System</h1>
     <br>
-    <h2>Information , Quizzes , fun facts , important notes and much more on solar system</h2>
+    <h2>Info, Quiz, fun facts and much more.</h2>
    <br><br><br><br><br><br><br><br><br><br><br><br>
-    <div><a href="index2.html">Get Started</a></div>
+    <div><a class="lappy" href="index2.html">Get Started</a></div>
 
-    <br><br><br><br><br>
+   <a href="index2.html" class="phone">
+Get Started
+   </a>
+
+   <br><br><br><br><br>
 
     <h3>
         Website designed by Rishika Sharma
