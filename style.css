@@ -101,11 +101,101 @@ div:hover a{
 }
 
 h3{
-    position: absolute;
-    bottom: 25px;
-    right: 25px;
+    z-index: 10;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
     border-radius: 50%;
+
 }
 h3 img{
     border-radius: 50%;
 }
+
+
+
+@media only screen and (max-width: 500px) {
+    body{
+    margin: 30px;
+    background-image: url(https://www.wallpapertip.com/wmimgs/100-1002225_wallpaper-planet-galaxy-universe-stars-galaxy-background-for.jpg);
+    background-size: 800px;
+    background-repeat: repeat-y;
+    background-color: black;
+    text-align: center;
+    }
+    .head{
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        font-size: 55px;
+        text-shadow: 2px 2px 2px black,
+                     0 0 2em lime,
+                     0 0 0.2em lime;
+        font-family: 'Kalam', cursive;
+        background-color: black;
+        border-radius: 25px;
+    }
+    .d1 {
+        background-image: url(https://cdn.mos.cms.futurecdn.net/VL7nBnqLZMhQt5VkPzzJVF-1200-80.jpg);
+        background-size: cover;
+        position: absolute;
+        top: 250px;
+        left: 30px;
+    }
+    .d2 {
+        background-color: black;
+        background-image: url(https://media1.giphy.com/media/X7jYaZR9uxmovsYWPR/giphy.gif);
+        background-size: cover;
+        position: absolute;
+        top: 550px;
+        left: 30px;
+    }
+    .d3 {
+        background-color: black;
+        background-image: url(https://maroonersrock.com/wp-content/uploads/2017/11/Its-Quiz-Time-Logo.png);
+        background-size: cover;
+        position: absolute;
+        top: 850px;
+        left: 30px;
+    }
+    .d4 {
+        background-image: url(https://cdn.mos.cms.futurecdn.net/iECYFREjmCQoJVJNx7eUVA.jpg);
+        background-size: cover;
+        position: absolute;
+        top: 1150px;
+        left: 30px;
+    }
+    .d5 {
+        background-image: url(https://38.media.tumblr.com/40ea4e6ed8af48aa86a689fee60d1320/tumblr_ndx2dupSuR1txar8to1_500.gif);
+        background-size: cover;
+        position: absolute;
+        top: 1450px;
+        left: 30px;
+    }
+    .d6 {
+        background-image: url(https://i.pinimg.com/564x/87/3d/c1/873dc1619a30dac479e0fb854df76691.jpg);
+        background-size: cover;
+        position: absolute;
+        top: 1750px;
+        left: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
