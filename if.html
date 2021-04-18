@@ -19,6 +19,7 @@
             background-repeat: repeat;
             background-size: 400px;
             margin: 50px;
+            user-select: none;
         }
         h6{
             position: fixed;
@@ -39,7 +40,6 @@
         h1{
             z-index: 3;
             background-color: black;
-            width: 100vw;
             text-align: center;
             position: sticky;
             top: 0px;
@@ -58,6 +58,128 @@
             font-family: 'ZCOOL XiaoWei', serif;
             word-spacing: 8px;
         }
+        a.vi{
+            color: whitesmoke;
+            text-shadow: none;
+            border: 2px ;
+        }
+        .pushable {
+        visibility: hidden;
+          position: relative;
+          border: none;
+          background: transparent;
+          padding: 0;
+          cursor: pointer;
+          outline-offset: 4px;
+          transition: filter 250ms;
+        }
+        .shadow {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border-radius: 12px;
+          background: hsl(0deg 0% 0% / 0.25);
+          will-change: transform;
+          transform: translateY(2px);
+          transition:
+            transform
+            600ms
+            cubic-bezier(.3, .7, .4, 1);
+        }
+        .edge {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border-radius: 12px;
+          background: linear-gradient(
+            to left,
+            hsl(340deg 100% 16%) 0%,
+            hsl(340deg 100% 32%) 8%,
+            hsl(340deg 100% 32%) 92%,
+            hsl(340deg 100% 16%) 100%
+          );
+        }
+        .front {
+          display: block;
+          position: relative;
+          padding: 12px 42px;
+          border-radius: 12px;
+          font-size: 1.25rem;
+          color: white;
+          background: hsl(345deg 100% 47%);
+          will-change: transform;
+          transform: translateY(-4px);
+          transition:
+            transform
+            600ms
+            cubic-bezier(.3, .7, .4, 1);
+        }
+        .pushable:hover {
+          filter: brightness(110%);
+        }
+        .pushable:hover .front {
+          transform: translateY(-6px);
+          transition:
+            transform
+            250ms
+            cubic-bezier(.3, .7, .4, 1.5);
+        }
+        .pushable:active .front {
+          transform: translateY(-2px);
+          transition: transform 34ms;
+        }
+        .pushable:hover .shadow {
+          transform: translateY(4px);
+          transition:
+            transform
+            250ms
+            cubic-bezier(.3, .7, .4, 1.5);
+        }
+        .pushable:active .shadow {
+          transform: translateY(1px);
+          transition: transform 34ms;
+        }
+        .pushable:focus:not(:focus-visible) {
+          outline: none;
+        }
+        @media only screen and (max-width: 500px) {
+            body{
+                background-size: contain;
+                margin: 20px;
+            }
+            h6{
+                position: fixed;
+                bottom: 5px;
+                right: 5px;
+                z-index: 5;
+                display: none;
+            }
+            .up,.back{
+                border-radius: 50%;
+                height: 50px;
+                visibility: hidden;
+            }
+            h5{
+                position: fixed;
+                bottom: 5px;
+                left: 5px;
+                z-index: 5;
+                display: none;
+            }
+            .hidden{
+                 visibility: hidden;
+            }
+            .vi{
+                visibility: visible;
+            }
+            .pushable{
+                visibility: visible;
+            }
+        }
     </style>
 </head>
 <body>
@@ -73,7 +195,7 @@
 <h2 id="top" style="text-align: center; background-color: black;"><a class="head" href="index.html">Solar System</a></h2>
 
 <h1>Introduction &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
-<img height="400px" src="https://cdn.mos.cms.futurecdn.net/GFYDoaTkaTrpXVP6Vui7uR-970-80.jpg" alt="solar system">
+<img width="300px" src="https://github.com/rishika-sharma/Images/blob/main/ss/1.jpg?raw=true" alt="solar system">
 
 <p>
     The solar system is a bizarre place with its alien planets, mysterious moons and strange phenomena that are so out-of-this-world they elude explanation. Scientists have discovered ice-spewing volcanoes on Pluto, while Mars is home to a truly "grand" canyon the size of the United States. There may even be a giant, undiscovered planet lurking somewhere beyond Neptune. Read on to find out some of the strangest facts about planets, dwarf planets, comets and other incredible objects around the solar system.
@@ -81,7 +203,12 @@
 <br><br><br>
 
     <h1>1. Uranus is tilted on its side &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
-    <img height="200px" src="https://cdn.mos.cms.futurecdn.net/eKMzxN5GNdUjSuQuoaj2R9-970-80.jpg">
+    <button class="pushable">
+        <span class="front">
+          <a class="vi" href="https://github.com/rishika-sharma/Images/blob/main/ss/2.jpg?raw=true">View Image</a>
+        </span>
+      </button>
+    <img class="hidden" height="200px" src="https://github.com/rishika-sharma/Images/blob/main/ss/2.jpg?raw=true">
     
     <p>
         Uranus appears to be a featureless blue ball upon first glance, but this gas giant of the outer solar system is pretty weird upon closer inspection. First, the planet rotates on its side for reasons scientists haven't quite figured out. The most likely explanation is that it underwent some sort of one or more titanic collisions in the ancient past. In any case, the tilt makes Uranus unique among the solar system planets.
@@ -91,7 +218,12 @@
     </p>
 
     <h1>2. Jupiter's moon Io has towering volcanic eruptions&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
-    <img height="200px" src="https://cdn.mos.cms.futurecdn.net/79HiEiYKgGknybacxyNxB6-970-80.jpg">
+    <button class="pushable">
+        <span class="front">
+          <a class="vi" href="https://raw.githubusercontent.com/rishika-sharma/Images/main/ss/3.jpg">View Image</a>
+        </span>
+      </button>
+    <img class="hidden" height="200px" src="https://raw.githubusercontent.com/rishika-sharma/Images/main/ss/3.jpg">
  
     <p>
         For those of us used to Earth's relatively inactive moon, Io's chaotic landscape may come as a huge surprise. The Jovian moon has hundreds of volcanoes and is considered the most active moon in the solar system, sending plumes up to 250 miles into its atmosphere . Some spacecraft have caught the moon erupting; the Pluto-bound New Horizons craft caught a glimpse of Io bursting when it passed by in 2007.
@@ -100,7 +232,12 @@
         Io's eruptions come from the immense gravity the moon is exposed to, being nestled in Jupiter's gravitational well. The moon's insides tense up and relax as it orbits closer to, and farther from, the planet, generating enough energy for volcanic activity. Scientists are still trying to figure out how heat spreads through Io's interior, though, making it difficult to predict where the volcanoes exist using scientific models alone.
     </p>
     <h1>3. Mars has the biggest volcano (that we know of)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
-    <img height="200px" src="https://cdn.mos.cms.futurecdn.net/XzwbNuX3okcCHJeyBJTmSA-970-80.jpg">
+    <button class="pushable">
+        <span class="front">
+          <a class="vi" href="https://raw.githubusercontent.com/rishika-sharma/Images/main/ss/4.jpg">View Image</a>
+        </span>
+      </button>
+    <img class="hidden" height="200px" src="https://raw.githubusercontent.com/rishika-sharma/Images/main/ss/4.jpg">
 
     <p>
         While Mars seems quiet now, we know that in the past something caused gigantic volcanoes to form and erupt. This includes Olympus Mons, the biggest volcano ever discovered in the solar system. At 374 miles (602 km) across, the volcano is comparable to the size of Arizona. It's 16 miles (25 kilometers) high, or triple the height of Mount Everest, the tallest mountain on Earth.
@@ -109,7 +246,12 @@
         Volcanoes on Mars can grow to such immense size because gravity is much weaker on the Red Planet than it is on Earth. But how those volcanoes came to be in the first place is not well known. There is a debate as to whether Mars has a global plate tectonic system and whether it is active.
     </p>
     <h1>4. Mars also has the longest valley&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
-    <img height="200px" src="https://cdn.mos.cms.futurecdn.net/tRcsQFJvhzjPjBA4xMhGZg-970-80.jpg">
+    <button class="pushable">
+        <span class="front">
+          <a class="vi" href="https://raw.githubusercontent.com/rishika-sharma/Images/main/ss/5.jpg">View Image</a>
+        </span>
+      </button>
+    <img class="hidden" height="200px" src="https://raw.githubusercontent.com/rishika-sharma/Images/main/ss/5.jpg">
 
  <p>
     If you thought the Grand Canyon was big, that's nothing compared to Valles Marineris. At 2,500 miles (4,000 km) long, this immense system of Martian canyons is more than 10 times as long as the Grand Canyon on Earth. Valles Marineris escaped the notice of early Mars spacecraft (which flew over other parts of the planet) and was finally spotted by the global mapping mission Mariner 9 in 1971. And what a sight it was to miss — Valles Marineris is about as long as the United States!
@@ -119,7 +261,12 @@
  </p>
 
  <h1>5. Venus has super-powerful winds.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
-    <img height="200px" src="https://cdn.mos.cms.futurecdn.net/qryTFcSmMSgjjmhCR6yUFj-970-80.jpg">
+ <button class="pushable">
+     <span class="front">
+       <a class="vi" href="https://raw.githubusercontent.com/rishika-sharma/Images/main/ss/6.jpg">View Image</a>
+     </span>
+   </button>
+    <img class="hidden" height="200px" src="https://raw.githubusercontent.com/rishika-sharma/Images/main/ss/6.jpg">
 
     <p>
         Venus is a hellish planet with a high-temperature, high-pressure environment on its surface. Ten of the Soviet Union's heavily shielded Venera spacecraft lasted only a few minutes on its surface when they landed there in the 1970s.
@@ -129,7 +276,12 @@
     </p>
 
     <h1>6. There is water ice everywhere.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
-    <img height="200px" src="https://cdn.mos.cms.futurecdn.net/EdKKDvy4mStBYjCST9ZuDZ-970-80.jpg">
+    <button class="pushable">
+        <span class="front">
+          <a class="vi" href="https://raw.githubusercontent.com/rishika-sharma/Images/main/ss/7.jpg">View Image</a>
+        </span>
+      </button>
+    <img class="hidden" height="200px" src="https://raw.githubusercontent.com/rishika-sharma/Images/main/ss/7.jpg">
 
     <p>
         Water ice was once considered a rare substance in space, but now we know we just weren't looking for it in the right places. In fact, water ice exists all over the solar system. Ice is a common component of comets and asteroids, for example. But we know that not all ice is the same. Close-up examination of Comet 67P/Churyumov–Gerasimenko by the European Space Agency's Rosetta spacecraft, for example, revealed a different kind of water ice than what is found on Earth.
@@ -139,7 +291,12 @@
     </p>
 
     <h1>7. Spacecraft have visited every planet.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
-    <img height="200px" src="https://cdn.mos.cms.futurecdn.net/TPBTtHSTyw2fY5LLfS4Vkm-970-80.jpg">
+    <button class="pushable">
+        <span class="front">
+          <a class="vi" href="https://raw.githubusercontent.com/rishika-sharma/Images/main/ss/8.jpg">View Image</a>
+        </span>
+      </button>
+    <img class="hidden" height="200px" src="https://raw.githubusercontent.com/rishika-sharma/Images/main/ss/8.jpg">
 
     <p>
         We've been exploring space for more than 60 years, and have been lucky enough to get close-up pictures of dozens of celestial objects. Most notably, we've sent spacecraft to all of the planets in our solar system — Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus and Neptune — as well as two dwarf planets, Pluto and Ceres.    </p>
@@ -148,7 +305,12 @@
 
 
     <h1>8. There could be life in the solar system, somewhere.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
-    <img height="200px" src="https://cdn.mos.cms.futurecdn.net/uHkh83aL5nsnkqmWQqoaaC-970-80.jpg">
+    <button class="pushable">
+        <span class="front">
+          <a class="vi" href="https://raw.githubusercontent.com/rishika-sharma/Images/main/ss/9.jpg">View Image</a>
+        </span>
+      </button>
+    <img class="hidden" height="200px" src="https://raw.githubusercontent.com/rishika-sharma/Images/main/ss/9.jpg">
 
     <p>
         So far, scientists have found no evidence that life exists elsewhere in the solar system. But as we learn more about how "extreme" microbes live in underwater volcanic vents or in frozen environments, more possibilities open up for where they could live on other planets. These aren't the aliens people once feared lived on Mars, but microbial life in the solar system is a possibility.    </p>
@@ -157,7 +319,12 @@
 
 
     <h1>9. Mercury is still shrinking.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
-    <img height="200px" src="https://cdn.mos.cms.futurecdn.net/W2zwNgYvw2cYUADQtTvaad-970-80.jpg">
+    <button class="pushable">
+        <span class="front">
+          <a class="vi" href="https://raw.githubusercontent.com/rishika-sharma/Images/main/ss/10.jpg">View Image</a>
+        </span>
+      </button>
+    <img class="hidden" height="200px" src="https://raw.githubusercontent.com/rishika-sharma/Images/main/ss/10.jpg">
 
     <p>
         For many years, scientists believed that Earth was the only tectonically active planet in the solar system. That changed after the Mercury Surface, Space Environment, Geochemistry and Ranging (MESSENGER) spacecraft did the first orbital mission at Mercury, mapping the entire planet in high definition and getting a look at the features on its surface.  
@@ -167,7 +334,13 @@
     </p>
 
     <h1>10. There are mountains on Pluto.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
-    <img height="200px" src="https://cdn.mos.cms.futurecdn.net/YSDTRrJBEDFbB9joEK5CP6-970-80.jpg">
+    
+    <button class="pushable">
+        <span class="front">
+          <a class="vi" href="https://raw.githubusercontent.com/rishika-sharma/Images/main/ss/11.jpg">View Image</a>
+        </span>
+      </button>
+    <img class="hidden" height="200px" src="https://raw.githubusercontent.com/rishika-sharma/Images/main/ss/11.jpg">
 
     <p>
         Pluto is a tiny world at the edge of the solar system, so at first it was thought that the dwarf planet would have a fairly uniform environment. That changed when NASA's New Horizons spacecraft flew by there in 2015, sending back pictures that altered our view of Pluto forever    
