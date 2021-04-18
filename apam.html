@@ -64,6 +64,126 @@
         li{
             font-size: 35px;
         }
+        .pushable {
+        visibility: hidden;
+          position: relative;
+          border: none;
+          background: transparent;
+          padding: 0;
+          cursor: pointer;
+          outline-offset: 4px;
+          transition: filter 250ms;
+        }
+        .shadow {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border-radius: 12px;
+          background: hsl(0deg 0% 0% / 0.25);
+          will-change: transform;
+          transform: translateY(2px);
+          transition:
+            transform
+            600ms
+            cubic-bezier(.3, .7, .4, 1);
+        }
+        .edge {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border-radius: 12px;
+          background: linear-gradient(
+            to left,
+            hsl(340deg 100% 16%) 0%,
+            hsl(340deg 100% 32%) 8%,
+            hsl(340deg 100% 32%) 92%,
+            hsl(340deg 100% 16%) 100%
+          );
+        }
+        .front {
+          display: block;
+          position: relative;
+          padding: 12px 42px;
+          border-radius: 12px;
+          font-size: 1.25rem;
+          color: white;
+          background: hsl(345deg 100% 47%);
+          will-change: transform;
+          transform: translateY(-4px);
+          transition:
+            transform
+            600ms
+            cubic-bezier(.3, .7, .4, 1);
+        }
+        .pushable:hover {
+          filter: brightness(110%);
+        }
+        .pushable:hover .front {
+          transform: translateY(-6px);
+          transition:
+            transform
+            250ms
+            cubic-bezier(.3, .7, .4, 1.5);
+        }
+        .pushable:active .front {
+          transform: translateY(-2px);
+          transition: transform 34ms;
+        }
+        .pushable:hover .shadow {
+          transform: translateY(4px);
+          transition:
+            transform
+            250ms
+            cubic-bezier(.3, .7, .4, 1.5);
+        }
+        .pushable:active .shadow {
+          transform: translateY(1px);
+          transition: transform 34ms;
+        }
+        .pushable:focus:not(:focus-visible) {
+          outline: none;
+        }
+        @media only screen and (max-width: 500px) {
+            body{
+                background-size: contain;
+                margin: 20px;
+            }
+            h6{
+                position: fixed;
+                bottom: 5px;
+                right: 5px;
+                z-index: 5;
+                display: none;
+            }
+            .up,.back{
+                border-radius: 50%;
+                height: 50px;
+                visibility: hidden;
+            }
+            h5{
+                position: fixed;
+                bottom: 5px;
+                left: 5px;
+                z-index: 5;
+                display: none;
+            }
+            .hidden{
+                 visibility: hidden;
+            }
+            .vi{
+                visibility: visible;
+            }
+            .pushable{
+                visibility: visible;
+            }
+            .img-saturn{
+                height: 130px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -75,40 +195,39 @@
     <h6><a href="#top">
         <img class="up" src="https://png.pngtree.com/png-vector/20190806/ourlarge/pngtree-arrow-arrows-up-upload-blue-dotted-line-line-icon-png-image_1651826.jpg" alt="Up">
     </a></h6>
-<br>
 <h2 id="top" style="text-align: center; background-color: black;"><a class="head" href="index.html">Solar System</a></h2>
 
 <br><br>
 <h1>Mercury</h1>
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Mercury_in_color_-_Prockter07-edit1.jpg/480px-Mercury_in_color_-_Prockter07-edit1.jpg">
+<img src="https://raw.githubusercontent.com/rishika-sharma/Images/main/ss/10.jpg">
 <p>
     Mercury (0.4 AU from the Sun) is the closest planet to the Sun and on average, all seven other planets. The smallest planet in the Solar System (0.055 M⊕), Mercury has no natural satellites. Besides impact craters, its only known geological features are lobed ridges or rupes that were probably produced by a period of contraction early in its history. Mercury's very tenuous atmosphere consists of atoms blasted off its surface by the solar wind. Its relatively large iron core and thin mantle have not yet been adequately explained. Hypotheses include that its outer layers were stripped off by a giant impact, or that it was prevented from fully accreting by the young Sun's energy.
 </p>
 
 <br><br>
 <h1>Venus</h1>
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/PIA23791-Venus-NewlyProcessedView-20200608.jpg/480px-PIA23791-Venus-NewlyProcessedView-20200608.jpg">
+<img src="https://github.com/rishika-sharma/Images/blob/main/480px-PIA23791-Venus-NewlyProcessedView-20200608-removebg-preview.png?raw=true">
 <p>
     Venus (0.7 AU from the Sun) is close in size to Earth (0.815 M⊕) and, like Earth, has a thick silicate mantle around an iron core, a substantial atmosphere, and evidence of internal geological activity. It is much drier than Earth, and its atmosphere is ninety times as dense. Venus has no natural satellites. It is the hottest planet, with surface temperatures over 400 °C (752 °F), most likely due to the amount of greenhouse gases in the atmosphere. No definitive evidence of current geological activity has been detected on Venus, but it has no magnetic field that would prevent depletion of its substantial atmosphere, which suggests that its atmosphere is being replenished by volcanic eruptions.
 </p>
 
 <br><br>
 <h1>Earth</h1>
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/The_Earth_seen_from_Apollo_17.jpg/480px-The_Earth_seen_from_Apollo_17.jpg">
+<img src="https://github.com/rishika-sharma/Images/blob/main/480px-The_Earth_seen_from_Apollo_17-removebg-preview.png?raw=true">
 <p>
     Earth (1 AU from the Sun) is the largest and densest of the inner planets, the only one known to have current geological activity, and the only place where life is known to exist. Its liquid hydrosphere is unique among the terrestrial planets, and it is the only planet where plate tectonics has been observed. Earth's atmosphere is radically different from those of the other planets, having been altered by the presence of life to contain 21% free oxygen. It has one natural satellite, the Moon, the only large satellite of a terrestrial planet in the Solar System.
 </p>
 
 <br><br>
 <h1>Mars</h1>
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/OSIRIS_Mars_true_color.jpg/480px-OSIRIS_Mars_true_color.jpg">
+<img src="https://github.com/rishika-sharma/Images/blob/main/480px-OSIRIS_Mars_true_color-removebg-preview.png?raw=true">
 <p>
     Mars (1.5 AU from the Sun) is smaller than Earth and Venus (0.107 M⊕). It has an atmosphere of mostly carbon dioxide with a surface pressure of 6.1 millibars (roughly 0.6% of that of Earth). Its surface, peppered with vast volcanoes, such as Olympus Mons, and rift valleys, such as Valles Marineris, shows geological activity that may have persisted until as recently as 2 million years ago. Its red colour comes from iron oxide (rust) in its soil. Mars has two tiny natural satellites (Deimos and Phobos) thought to be either captured asteroids, or ejected debris from a massive impact early in Mars's history.
 </p>
 
 <br><br>
 <h1>Jupiter</h1>
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Jupiter_and_its_shrunken_Great_Red_Spot.jpg/480px-Jupiter_and_its_shrunken_Great_Red_Spot.jpg">
+<img src="https://github.com/rishika-sharma/Images/blob/main/480px-Jupiter_and_its_shrunken_Great_Red_Spot-removebg-preview.png?raw=true">
 <p>
     Jupiter (5.2 AU), at 318 M⊕, is 2.5 times the mass of all the other planets put together. It is composed largely of hydrogen and helium. Jupiter's strong internal heat creates semi-permanent features in its atmosphere, such as cloud bands and the Great Red Spot. Jupiter has 79 known satellites. The four largest, Ganymede, Callisto, Io, and Europa, show similarities to the terrestrial planets, such as volcanism and internal heating. Ganymede, the largest satellite in the Solar System, is larger than Mercury.
 </p>
@@ -118,21 +237,21 @@
 
 <br><br>
 <h1>Saturn</h1>
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Saturn_during_Equinox.jpg/480px-Saturn_during_Equinox.jpg">
+<img class="img-saturn" src="https://github.com/rishika-sharma/Images/blob/main/480px-Saturn_during_Equinox-removebg-preview.png?raw=true">
 <p>
     Saturn (9.5 AU), distinguished by its extensive ring system, has several similarities to Jupiter, such as its atmospheric composition and magnetosphere. Although Saturn has 60% of Jupiter's volume, it is less than a third as massive, at 95 M⊕. Saturn is the only planet of the Solar System that is less dense than water. The rings of Saturn are made up of small ice and rock particles. Saturn has 82 confirmed satellites composed largely of ice. Two of these, Titan and Enceladus, show signs of geological activity. Titan, the second-largest moon in the Solar System, is larger than Mercury and the only satellite in the Solar System with a substantial atmosphere.
 </p>
 
 <br><br>
 <h1>Uranus</h1>
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Uranus2.jpg/480px-Uranus2.jpg">
+<img src="https://github.com/rishika-sharma/Images/blob/main/480px-Uranus2-removebg-preview.png?raw=true">
 <p>
     Uranus (19.2 AU), at 14 M⊕, is the lightest of the outer planets. Uniquely among the planets, it orbits the Sun on its side; its axial tilt is over ninety degrees to the ecliptic. It has a much colder core than the other giant planets and radiates very little heat into space. Uranus has 27 known satellites, the largest ones being Titania, Oberon, Umbriel, Ariel, and Miranda.
 </p>
 
 <br><br>
 <h1>Neptune</h1>
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Neptune_-_Voyager_2_%2829347980845%29_flatten_crop.jpg/480px-Neptune_-_Voyager_2_%2829347980845%29_flatten_crop.jpg">
+<img src="https://github.com/rishika-sharma/Images/blob/main/480px-Neptune_-_Voyager_2__29347980845__flatten_crop-removebg-preview.png?raw=true">
 <p>
     Neptune (30.1 AU), though slightly smaller than Uranus, is more massive (17 M⊕) and hence more dense. It radiates more internal heat, but not as much as Jupiter or Saturn. Neptune has 14 known satellites. The largest, Triton, is geologically active, with geysers of liquid nitrogen. Triton is the only large satellite with a retrograde orbit. Neptune is accompanied in its orbit by several minor planets, termed Neptune trojans, that are in 1:1 resonance with it.
 </p>
@@ -147,7 +266,12 @@
 
 <br><br>
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/7/73/25_solar_system_objects_smaller_than_Earth.jpg" height="1000px">
+<button class="pushable">
+    <span class="front">
+      <a class="vi" href="https://github.com/rishika-sharma/Images/blob/main/25_solar_system_objects_smaller_than_Earth.jpg?raw=true">View Image</a>
+    </span>
+  </button>
+<img class="hidden" src="https://github.com/rishika-sharma/Images/blob/main/25_solar_system_objects_smaller_than_Earth.jpg?raw=true" height="1000px">
 <br><br><br><br><br>
 <h1>Moons</h1>
 
