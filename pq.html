@@ -20,6 +20,7 @@
             background-size: 400px;
             margin: 100px;
             color: white;
+            user-select: none;
         }
         h6{
             position: fixed;
@@ -61,6 +62,31 @@
             width: 300px;
             background-color: rgba(255, 255, 255, 0);
             border-radius: 25px;
+        }
+        @media only screen and (max-width: 500px) {
+            body{
+                background-size: contain;
+                margin: 20px;
+            }
+            h6{
+                position: fixed;
+                bottom: 5px;
+                right: 5px;
+                z-index: 5;
+                display: none;
+            }
+            .up,.back{
+                border-radius: 50%;
+                height: 50px;
+                visibility: hidden;
+            }
+            h5{
+                position: fixed;
+                bottom: 5px;
+                left: 5px;
+                z-index: 5;
+                display: none;
+            }
         }
     </style>
 </head>
