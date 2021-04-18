@@ -39,6 +39,56 @@
         .rotate{
             animation: rotation 10s linear infinite;
         }
+        @media only screen and (max-width: 500px) {
+            body{
+                background-size: contain;
+                margin: 20px;
+            }
+            h6{
+                position: fixed;
+                bottom: 5px;
+                right: 5px;
+                z-index: 5;
+                display: none;
+            }
+            .up,.back{
+                border-radius: 50%;
+                height: 50px;
+                visibility: hidden;
+            }
+            h5{
+                position: fixed;
+                bottom: 5px;
+                left: 5px;
+                z-index: 5;
+                display: none;
+            }
+            .sun{
+                width: 320px;
+            }
+            .one{
+                height: 20px;
+            }
+            .two{
+                height: 70px;
+            }
+            .three{
+                height: 80px;
+            }
+            .five{
+                height: 240px;
+            }
+            .six{
+                height: 150px;
+                margin-left: 0px;
+            }
+            .seven{
+                height: 140px;
+            }
+            .eight{
+                height: 120px;
+            }
+        }
         @keyframes rotation {
           from {
             transform: rotate(0deg);
@@ -66,22 +116,22 @@
 
 
 
-<img height="750px" src="https://github.com/rishika-sharma/Images/blob/main/sun.png?raw=true">
+<img width="750px" class="sun" src="https://github.com/rishika-sharma/Images/blob/main/sun.png?raw=true">
 <br><br><br>
-<img class="rotate" height="40px" src="https://nineplanets.org/wp-content/uploads/2019/09/mercury.png">
+<img class="rotate one" height="40px" src="https://raw.githubusercontent.com/rishika-sharma/Images/main/ss/10.jpg">
 <br><br><br><br><br>
-<img class="rotate" height="90px" src="https://github.com/rishika-sharma/Images/blob/main/480px-PIA23791-Venus-NewlyProcessedView-20200608-removebg-preview.png?raw=true">
+<img class="rotate two" height="90px" src="https://github.com/rishika-sharma/Images/blob/main/480px-PIA23791-Venus-NewlyProcessedView-20200608-removebg-preview.png?raw=true">
 <br><br><br><br><br>
-<img class="rotate" height="100px" src="https://github.com/rishika-sharma/Images/blob/main/480px-The_Earth_seen_from_Apollo_17-removebg-preview.png?raw=true">
+<img class="rotate three" height="100px" src="https://github.com/rishika-sharma/Images/blob/main/480px-The_Earth_seen_from_Apollo_17-removebg-preview.png?raw=true">
 <br><br><br><br><br>
-<img class="rotate" height="60px" src="https://github.com/rishika-sharma/Images/blob/main/480px-OSIRIS_Mars_true_color-removebg-preview.png?raw=true">
+<img class="rotate four" height="60px" src="https://github.com/rishika-sharma/Images/blob/main/480px-OSIRIS_Mars_true_color-removebg-preview.png?raw=true">
 <br><br><br><br><br>
-<img class="rotate" height="480px" src="https://github.com/rishika-sharma/Images/blob/main/480px-Jupiter_and_its_shrunken_Great_Red_Spot-removebg-preview.png?raw=true">
+<img class="rotate five" height="480px" src="https://github.com/rishika-sharma/Images/blob/main/480px-Jupiter_and_its_shrunken_Great_Red_Spot-removebg-preview.png?raw=true">
 <br><br><br><br><br><br><br><br><br><br>
-<img class="rotate" height="400px" src="https://github.com/rishika-sharma/Images/blob/main/480px-Saturn_during_Equinox-removebg-preview.png?raw=true">
+<img class="rotate six" height="400px" src="https://github.com/rishika-sharma/Images/blob/main/480px-Saturn_during_Equinox-removebg-preview.png?raw=true">
 <br><br><br><br><br><br><br><br><br><br>
-<img class="rotate" height="220px" src="https://github.com/rishika-sharma/Images/blob/main/480px-Uranus2-removebg-preview.png?raw=true">
+<img class="rotate seven" height="220px" src="https://github.com/rishika-sharma/Images/blob/main/480px-Uranus2-removebg-preview.png?raw=true">
 <br><br><br><br><br>
-<img class="rotate" height="200px" src="https://github.com/rishika-sharma/Images/blob/main/480px-Neptune_-_Voyager_2__29347980845__flatten_crop-removebg-preview.png?raw=true">
+<img class="rotate eight" height="200px" src="https://github.com/rishika-sharma/Images/blob/main/480px-Neptune_-_Voyager_2__29347980845__flatten_crop-removebg-preview.png?raw=true">
 </body>
 </html>
