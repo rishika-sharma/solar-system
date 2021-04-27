@@ -1,5 +1,5 @@
 body{
-    background-image: url(https://www.thegreatcoursesdaily.com/wp-content/uploads/2020/08/Field-Guide-Planets_7-Clues-to-Understand-How-Our-Solar-System-Formed_QBS_Featured.jpg);
+    background-image: url(https://github.com/rishika-sharma/solar-system/blob/main/1bg.jpg?raw=true);
     background-size: cover;
 }
 
@@ -33,7 +33,7 @@ div{
 }
 
 .d1 {
-    background-image: url(https://cdn.mos.cms.futurecdn.net/VL7nBnqLZMhQt5VkPzzJVF-1200-80.jpg);
+    background-image: url(https://github.com/rishika-sharma/solar-system/blob/main/d1.jpg?raw=true);
     background-size: cover;
     position: absolute;
     top: 200px;
@@ -49,28 +49,28 @@ div{
 }
 .d3 {
     background-color: black;
-    background-image: url(https://maroonersrock.com/wp-content/uploads/2017/11/Its-Quiz-Time-Logo.png);
+    background-image: url(https://github.com/rishika-sharma/solar-system/blob/main/d3.png?raw=true);
     background-size: cover;
     position: absolute;
     top: 200px;
     left: 1100px;
 }
 .d4 {
-    background-image: url(https://cdn.mos.cms.futurecdn.net/iECYFREjmCQoJVJNx7eUVA.jpg);
+    background-image: url(https://github.com/rishika-sharma/solar-system/blob/main/d4.jpg?raw=true);
     background-size: cover;
     position: absolute;
     top: 500px;
     left: 130px;
 }
 .d5 {
-    background-image: url(https://38.media.tumblr.com/40ea4e6ed8af48aa86a689fee60d1320/tumblr_ndx2dupSuR1txar8to1_500.gif);
+    background-image: url(https://github.com/rishika-sharma/solar-system/blob/main/d5.gif?raw=true);
     background-size: cover;
     position: absolute;
     top: 500px;
     left: 610px;
 }
 .d6 {
-    background-image: url(https://i.pinimg.com/564x/87/3d/c1/873dc1619a30dac479e0fb854df76691.jpg);
+    background-image: url(https://github.com/rishika-sharma/solar-system/blob/main/d6.jpg?raw=true);
     background-size: cover;
     position: absolute;
     top: 500px;
@@ -117,7 +117,7 @@ h3 img{
 @media only screen and (max-width: 500px) {
     body{
     margin: 30px;
-    background-image: url(https://www.wallpapertip.com/wmimgs/100-1002225_wallpaper-planet-galaxy-universe-stars-galaxy-background-for.jpg);
+    background-image: url(https://github.com/rishika-sharma/solar-system/blob/main/mobile1bg.jpg?raw=true);
     background-size: 800px;
     background-repeat: repeat-y;
     background-color: black;
@@ -136,7 +136,7 @@ h3 img{
         border-radius: 25px;
     }
     .d1 {
-        background-image: url(https://cdn.mos.cms.futurecdn.net/VL7nBnqLZMhQt5VkPzzJVF-1200-80.jpg);
+        background-image: url(https://github.com/rishika-sharma/solar-system/blob/main/d1.jpg?raw=true);
         background-size: cover;
         position: absolute;
         top: 250px;
@@ -152,28 +152,28 @@ h3 img{
     }
     .d3 {
         background-color: black;
-        background-image: url(https://maroonersrock.com/wp-content/uploads/2017/11/Its-Quiz-Time-Logo.png);
+        background-image: url(https://github.com/rishika-sharma/solar-system/blob/main/d3.png?raw=true);
         background-size: cover;
         position: absolute;
         top: 850px;
         left: 30px;
     }
     .d4 {
-        background-image: url(https://cdn.mos.cms.futurecdn.net/iECYFREjmCQoJVJNx7eUVA.jpg);
+        background-image: url(https://github.com/rishika-sharma/solar-system/blob/main/d4.jpg?raw=true);
         background-size: cover;
         position: absolute;
         top: 1150px;
         left: 30px;
     }
     .d5 {
-        background-image: url(https://38.media.tumblr.com/40ea4e6ed8af48aa86a689fee60d1320/tumblr_ndx2dupSuR1txar8to1_500.gif);
+        background-image: url(https://github.com/rishika-sharma/solar-system/blob/main/d5.gif?raw=true);
         background-size: cover;
         position: absolute;
         top: 1450px;
         left: 30px;
     }
     .d6 {
-        background-image: url(https://i.pinimg.com/564x/87/3d/c1/873dc1619a30dac479e0fb854df76691.jpg);
+        background-image: url(https://github.com/rishika-sharma/solar-system/blob/main/d6.jpg?raw=true);
         background-size: cover;
         position: absolute;
         top: 1750px;
